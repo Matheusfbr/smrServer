@@ -1,0 +1,17 @@
+aplication\Program.class
+gui\listeners\DataChangeListener.class
+model\services\ClientFactory.class
+model\services\LogService.class
+gui\ClienteListController.class
+model\services\ClienteService.class
+gui\util\Alerts.class
+gui\ClienteListController$1.class
+model\entities\Log.class
+model\services\SaveLogBD.class
+model\entities\Client.class
+gui\MainViewController.class
+model\entities\Server.class
+aplication\Main.class
+gui\LogListController.class
+aplication\Main$1.class
+model\enums\Status.class

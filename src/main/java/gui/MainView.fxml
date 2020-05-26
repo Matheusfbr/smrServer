@@ -6,7 +6,9 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
 <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
@@ -33,7 +35,15 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <ImageView fitHeight="413.0" fitWidth="679.0" opacity="0.73" pickOnBounds="true" preserveRatio="true" />
+            <AnchorPane prefHeight="416.0" prefWidth="680.0">
+               <children>
+                  <ImageView fitHeight="412.0" fitWidth="678.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../imagens/PlanoDeFundo2.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
             <ButtonBar prefHeight="40.0" prefWidth="200.0">
               <buttons>
                 <Button fx:id="btLigar" mnemonicParsing="false" onAction="#onBtLigarAction" text="Ligar" />

@@ -1,8 +1,11 @@
 package gui;
 
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
 import aplication.Main;
@@ -42,12 +45,14 @@ public class MainViewController implements Initializable {
 	@FXML
 	private Button btDesligar;
 	
-	@FXML
-	public void onBtLigarAction(ActionEvent event) {
-		Thread factory = new ClientFactory();
-		
-		factory.start();
 
+	
+	
+	@FXML
+	public void onBtLigarAction(ActionEvent event) throws UnknownHostException, InterruptedException {
+		Thread factory = new ClientFactory();
+		Alerts.showAlert("SMR", "Aguardando conexão!", "Porta 12345 aberta no Servidor " + InetAddress.getLocalHost().getHostAddress() + " Aguardando conexão do cliente... ", AlertType.INFORMATION);
+		factory.start();
 	}
 	
 	@FXML

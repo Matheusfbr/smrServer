@@ -1,7 +1,6 @@
 package model.services;
 
 import java.io.IOException;
-import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -20,8 +19,7 @@ public class ClientFactory extends Thread {
 
 		try {
 			servidor = new ServerSocket(12345);
-			System.out.println("Porta 12345 aberta no Servidor " + InetAddress.getLocalHost().getHostAddress());
-			System.out.println("Aguardando conexão do cliente...");
+			
 			
 			while (servidor.isBound()) {
 				Socket cliente = servidor.accept();
